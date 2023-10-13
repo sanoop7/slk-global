@@ -1,0 +1,120 @@
+.Header_cont {
+    height: 7rem;
+    position: fixed;
+    z-index: 3;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(180deg, rgba(2, 0, 36, 1) 0%, rgba(1, 1, 1, 0) 100%, rgba(0, 212, 255, 1) 100%);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5rem;
+    align-items: center;
+}
+
+.logo {
+    width: 20%;
+}
+
+img {
+    width: 100%;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    font-size: 1.8rem;
+    color: white;
+}
+
+.Link {
+    text-decoration: none;
+    font-size: 1rem;
+    position: relative;
+    cursor: pointer;
+    letter-spacing: 0.1rem;
+    padding-bottom: 10px;
+    font-family: monospace;
+    color: #ffffff;
+}
+
+.menu .Link::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    /* Initial width is 0, making it start from the left */
+    height: 2px;
+    background-color: #ffffff;
+    /* Color of the underline */
+    transition: width 0.3s;
+    /* Add animation to the width */
+}
+
+.menu .Link:hover::before {
+    width: 100%;
+    /* Increase width to 100% on hover (from left to right) */
+}
+
+.menu .Link:hover {
+    /* font-weight: bold; */
+    /* Make the text bold on hover */
+}
+
+.active {
+    color: rgb(168, 161, 161);
+}
+
+.drawer-btn {
+    text-decoration: none;
+    font-size: 1rem;
+    position: relative;
+    cursor: pointer;
+    letter-spacing: 0.1rem;
+    padding-bottom: 10px;
+    font-family: monospace;
+    color: #ffffff;
+}
+
+.link_drawer {
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display: none;
+    cursor: pointer;
+}
+
+.drawer-btn:hover .link_drawer {
+    display: flex;
+}
+
+.link_drawer_item {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.411);
+    width: 100%;
+    justify-content: center;
+    padding: 0.7rem 0;
+    border-bottom: 1px solid rgb(167, 160, 160);
+    font-size: 0.8rem;
+    border-radius: 5px;
+
+}
+
+.link_drawer_item:hover {
+    background-color: rgba(0, 0, 0, 0.767);
+
+}
+
+@media screen and (max-width: 480px) {
+    .menu {
+        display: none;
+    }
+
+    .logo {
+        width: 50%;
+    }
+}

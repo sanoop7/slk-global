@@ -1,0 +1,129 @@
+.Landing_cont {
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+}
+
+.Landing_slide_1 {
+    width: 20%;
+    transition: width 0.3s;
+    background-position: center;
+    /* Center the image */
+    background-repeat: no-repeat;
+    /* Do not repeat the image */
+    background-size: cover;
+    /* Resize the background image to cover the entire container */
+    padding: 2rem;
+}
+
+.Landing_slide_2 {
+    width: 20%;
+    padding: 2rem;
+
+    transition: width 0.3s;
+    background-position: center;
+    /* Center the image */
+    background-repeat: no-repeat;
+    /* Do not repeat the image */
+    background-size: cover;
+    /* Resize the background image to cover the entire container */
+    box-shadow: -14px -1px 20px #000000;
+
+}
+
+.Landing_slide_3 {
+    width: 20%;
+    transition: width 0.3s;
+    background-position: center;
+    /* Center the image */
+    background-repeat: no-repeat;
+    padding: 2rem;
+
+    /* Do not repeat the image */
+    background-size: cover;
+    /* Resize the background image to cover the entire container */
+    box-shadow: -14px -1px 20px #000000;
+}
+
+.activeslide {
+    width: 60%;
+    transition: width 0.3s;
+}
+
+.slider_head {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+    font-family: serif;
+    letter-spacing: 5px;
+    color: white;
+    margin-top: 20rem;
+    transition: margin 1s, height 1s, background-color 1s;
+    position: relative;
+
+}
+
+.active_head {
+    margin-top: 9rem;
+    background-color: #000000ce;
+    padding: 2rem;
+    height: 17rem;
+    cursor: pointer;
+
+}
+
+.slide_desc {
+    color: white;
+    visibility: hidden;
+    margin-top: 5rem;
+    transition: margin 1s;
+    position: absolute;
+    top: -10rem;
+    font-size: 1.2rem;
+}
+
+.active_head .slide_desc {
+    visibility: visible;
+    margin-top: 0;
+    top: 8rem;
+    padding: 1rem;
+    padding-left: 0rem;
+}
+
+.active_head .slider_sub {
+    display: none;
+}
+
+.Learn_more {
+    float: right;
+    margin-right: 2rem;
+    margin-top: 2rem;
+}
+
+@media screen and (max-width: 480px) {
+    .Landing_slide_1 {
+        width: 85%;
+    }
+
+    .Landing_slide_2 {
+        width: 85%;
+    }
+
+    .Landing_slide_3 {
+        width: 85%;
+    }
+
+    .activeslide {
+        height: 100%;
+        width: 85%;
+    }
+
+    .Landing_cont {
+        flex-direction: column;
+        overflow: scroll;
+    }
+
+    .active_head {
+        height: 21.5rem;
+    }
+}
