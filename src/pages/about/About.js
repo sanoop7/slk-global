@@ -67,13 +67,13 @@ function About() {
                   </ScrollAnimation>
                 </div>
                 <div className="section-img">
-                  <img src={aboutImg_1} className="img" />
+                  <img src={aboutImg_1} className="img" alt="aboutImage" />
                 </div>
               </div>
 
               <div className="content-section content-section_2">
                 <div className="section-img">
-                  <img src={aboutImg_2} className="img" />
+                  <img src={aboutImg_2} className="img" alt="aboutImage" />
                 </div>
                 <div className="section-text-cont">
                   <ScrollAnimation
