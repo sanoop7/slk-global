@@ -1,0 +1,23 @@
+.accordion {
+    border: 1px solid rgb(255 255 255);
+    border-radius: 2px;
+    width: 100%;
+}
+
+.accordion__button {
+    background-color: #000000a6;
+    color: white;
+    /* border: 1px solid white; */
+    border-bottom: none;
+    width: auto;
+}
+
+.accordion__button:hover {
+    background-color: #000000;
+
+}
+
+.accordion__panel {
+    color: white;
+    background-color: #00000096;
+}

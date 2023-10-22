@@ -1,0 +1,28 @@
+.carousel-cont {
+    margin-top: 10rem;
+}
+
+.section-container {
+    height: 100vh;
+    display: flex;
+    padding: 10rem 5rem;
+    align-items: center;
+}
+
+.section-desc-cont {
+    display: flex;
+    width: 150%;
+}
+
+.section-desc {
+    font-size: 1.5rem;
+    font-weight: 300;
+    padding: 3rem;
+    background-color: rgba(0, 0, 0, 0.692);
+    color: white;
+}
+
+.section-desc-img {
+    z-index: 2;
+    width: 80%;
+}
