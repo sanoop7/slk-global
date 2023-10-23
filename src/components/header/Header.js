@@ -26,21 +26,24 @@ function Header() {
   return (
     <div className="Header_cont">
       <div className="logo">
-        <img src={logo} alt="Logo" />
+        <NavLink to="/" className="Link">
+          <img src={logo} alt="Logo" />
+        </NavLink>
       </div>
       <div className={`menu ${scrolling ? "scrolled" : ""}`}>
         {/* Add your navigation menu items here */}
-        <NavLink to="/" className="Link">
-          Home
-        </NavLink>
+
         <NavLink to="/about" className="Link">
-          Who We Are
+          WHO WE ARE
         </NavLink>
         <NavLink to="/what-we-do" className="Link">
-          What we do
+          WHAT WE DO
         </NavLink>
         <NavLink to="/contact" className="Link">
-          Contact Us
+          CONTACT US
+        </NavLink>
+        <NavLink to="/careers" className="Link">
+          CAREERS
         </NavLink>
         <span className=" drawer-btn">
           Capability Statement

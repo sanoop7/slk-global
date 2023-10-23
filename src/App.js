@@ -5,6 +5,8 @@ import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import About from "./pages/about/About";
 import WhatWeDo from "./pages/whatWeDo/whatWeDo";
+import Contact from "./pages/contact/Contact";
+import Career from "./pages/career/Career";
 // import Contact from './pages/contact/Contact';
 
 function App() {
@@ -17,6 +19,8 @@ function App() {
           <Route exact path="/" element={<Landing />} />
           <Route path="/what-we-do" element={<WhatWeDo />} />
           <Route path="/About" element={<About />} />
+          <Route path="/Contact" element={<Contact />} />
+          <Route path="/careers" element={<Career />} />
           {/* <Route path="/contact" component={Contact} /> */}
           {/* You can add more routes as needed */}
         </Routes>

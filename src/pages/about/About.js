@@ -31,7 +31,14 @@ function About() {
         <div className="about-container">
           <Parallax strength={300} bgImage={BannerBg}>
             <div className="banner-container">
-              <div className="text-content">Normal Parallax</div>
+              <ScrollAnimation
+                animateIn="bounceInRight"
+                animateOut="bounceOutLeft"
+              >
+                <div className="text-banner">
+                  <h1 className="banner-head">WHO WE ARE</h1>
+                </div>
+              </ScrollAnimation>
             </div>
           </Parallax>
           <Parallax
@@ -45,6 +52,7 @@ function About() {
                   <ScrollAnimation
                     animateIn="bounceInRight"
                     animateOut="bounceOutLeft"
+                    animateOnce={true}
                   >
                     <div className="section-text">
                       SLK Global is a company that specialises in integrated
@@ -79,6 +87,7 @@ function About() {
                   <ScrollAnimation
                     animateIn="bounceInLeft"
                     animateOut="bounceOutRight"
+                    animateOnce={true}
                   >
                     <div className="section-text">
                       We immerse our specialists in the client's business and
@@ -91,12 +100,12 @@ function About() {
                   </ScrollAnimation>
                 </div>
               </div>
-              <ScrollAnimation animateIn="flipInX">
+              <ScrollAnimation animateIn="flipInX" animateOnce={true}>
                 <div className="section-vision">
                   <div className="vision-cont">
                     <div className="section-icon"></div>
                     <h1 className="section-head">Our Vision</h1>
-                    <div className="section-desc">
+                    <div>
                       With a vision to be the best and most sought-after
                       procurement, logistics, and subcontracting firm in the
                       industry, we assist clients in creating and maximising
@@ -110,7 +119,7 @@ function About() {
                   <div className="mission-cont">
                     <div className="section-icon"></div>
                     <h1 className="section-head">Our Mission</h1>
-                    <div className="section-desc">
+                    <div>
                       Our mission is to be recognised as the leading
                       procurement, logistics, and subcontracting firm in the
                       industry by consistently delivering exceptional service
@@ -140,7 +149,7 @@ function About() {
                 <h1 className="section-head approach-content-head">
                   Our Approach
                 </h1>
-                <div className="section-desc approach-content-desc">
+                <div className="approach-content-desc">
                   Our expert teams work closely with clients to analyse data and
                   understand their business needs. We provide insights that
                   uncover hidden value because of our broad commercial and
